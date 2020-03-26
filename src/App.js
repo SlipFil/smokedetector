@@ -11,7 +11,7 @@ const { Content, Sider } = Layout;
 function App() {
   return (
     <div className="App">
-      <Loader/>
+     
       <Layout>
         <Header />
         <Layout>
