@@ -1,0 +1,15 @@
+@import "../node_modules/antd/dist/antd.css";
+
+.App {
+  height: 1vh;
+  width: 100%;
+  text-align: center;
+}
+.sider {
+
+  background-color: #fff;
+  width: 300px;
+  border-right: 1px solid gray;
+}
+
+

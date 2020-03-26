@@ -1,0 +1,14 @@
+.wrapper{
+padding: 10px;
+border-bottom: 1px solid gray;
+}
+.button {
+    width:80%;
+    
+    margin-bottom: 20px;
+}
+.search {
+    width:80%;
+    margin: 10 auto;
+    margin-bottom: 5px;
+}
