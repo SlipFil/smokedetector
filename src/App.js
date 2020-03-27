@@ -4,7 +4,9 @@ import { Layout } from "antd";
 
 import Header from "./components/header/header";
 import AddAndSearch from "./components/sider/addAndSearch";
-import Loader from './components/loader/loader'
+import SearchByServer from "./components/content/searchByServer";
+import Detector from './components/content/list';
+
 
 const { Content, Sider } = Layout;
 
@@ -20,20 +22,21 @@ function App() {
             
 
           </Sider>
-          <Layout style={{ padding: "0 24px 24px" }}>
+          <Layout >
             <Content
               style={{
-                padding: 24,
+                width: 100 + '%',
                 margin: 0,
                 minHeight: 280
               }}
             >
-              Content
+              <SearchByServer />
+              <Detector />
             </Content>
           </Layout>
         </Layout>
       </Layout>
-      ,
+      
     </div>
   );
 }
