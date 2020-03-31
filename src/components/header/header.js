@@ -18,10 +18,11 @@ const Header = () => {
         
         
       </div>
-      <Button className={s.button} type="primary">Добавить RS</Button>
-      <a href="#">
-        <MoreOutlined />
-      </a>
+      <div>
+      <Button className={s.addbutton} type="primary">Добавить RS</Button>
+      
+        <MoreOutlined className={s.more} />
+      </div>
     </div>
   );
 };
