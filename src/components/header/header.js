@@ -2,6 +2,7 @@ import React from "react";
 import { MoreOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import s from "./header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,9 +12,11 @@ const Header = () => {
         <br /> Detector
       </div>
       <div className={s.RSbuttons}>
-        <Button className={s.button}>Redist Server 1</Button>
-        <Button className={s.button}>Redist Server 2</Button>
-        <Button className={s.button}>Redist Server 3</Button>
+      <NavLink to="/redistserver1" activeClassName={s.active}><Button className={s.button}>Redist Server 1</Button></NavLink>
+      <NavLink to="/redistserver2" activeClassName={s.active}><Button className={s.button}>Redist Server 2</Button></NavLink>
+      <NavLink to="/redistserver3" activeClassName={s.active}><Button className={s.button}>Redist Server 3</Button></NavLink>
+        
+        
       </div>
       <Button className={s.button} type="primary">Добавить RS</Button>
       <a href="#">

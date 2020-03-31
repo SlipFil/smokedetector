@@ -1,0 +1,6 @@
+.sider{
+    display: block;
+    height: 700px;
+    grid-area: s;
+    border-right: solid 1px gray;
+}

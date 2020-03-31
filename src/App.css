@@ -1,15 +1,13 @@
 @import "../node_modules/antd/dist/antd.css";
 
 .App {
-  height: 1vh;
+  
   width: 100%;
   text-align: center;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "h h" "s c";
+  border-bottom: 1px solid gray;
 }
-.sider {
-
-  background-color: #fff;
-  width: 300px;
-  border-right: 1px solid gray;
-}
-
-

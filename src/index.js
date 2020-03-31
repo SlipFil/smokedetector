@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import camers from './camers';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App appCams={camers}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,43 +1,23 @@
 import React from "react";
 import "./App.css";
-import { Layout } from "antd";
 
+import Content from "./components/content/content";
 import Header from "./components/header/header";
-import AddAndSearch from "./components/sider/addAndSearch";
-import SearchByServer from "./components/content/searchByServer";
-import Detector from './components/content/list';
+import Sider from "./components/sider/sider";
 
+import { Route, BrowserRouter } from "react-router-dom";
 
-const { Content, Sider } = Layout;
-
-function App() {
+function App(props) {
   return (
-    <div className="App">
-     
-      <Layout>
+    <BrowserRouter>
+      <div className="App">
         <Header />
-        <Layout>
-          <Sider width={250} className="sider">
-            <AddAndSearch />
-            
 
-          </Sider>
-          <Layout >
-            <Content
-              style={{
-                width: 100 + '%',
-                margin: 0,
-                minHeight: 280
-              }}
-            >
-              <SearchByServer />
-              <Detector />
-            </Content>
-          </Layout>
-        </Layout>
-      </Layout>
-      
-    </div>
+        <Sider cams={props.appCams.camers}  />
+
+        <Content />
+      </div>
+    </BrowserRouter>
   );
 }
 
