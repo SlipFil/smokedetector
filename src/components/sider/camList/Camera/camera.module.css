@@ -1,0 +1,10 @@
+.camera{
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    padding-left: 25px;
+    
+}
+.title{
+    font-weight: 700;
+}

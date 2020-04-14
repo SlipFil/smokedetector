@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 
 import Content from "./components/content/content";
-import Header from "./components/header/header";
-import Sider from "./components/sider/sider";
+import HeaderContainer from "./components/header/headerContainer";
+import SiderContainer from "./components/sider/siderContainer";
 
 import { Route, BrowserRouter } from "react-router-dom";
 
@@ -11,9 +11,9 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <HeaderContainer />
 
-        <Sider cams={props.appCams.camers}  />
+        <SiderContainer   />
 
         <Content />
       </div>
@@ -22,3 +22,4 @@ function App(props) {
 }
 
 export default App;
+// cams={props.appCams.camers}

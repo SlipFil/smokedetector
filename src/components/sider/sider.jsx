@@ -7,7 +7,7 @@ const Sider = (props) => {
   return (
     <div className={s.sider}>
       <AddAndSearch />
-      <CamList cams={props.cams} />
+      <CamList cams={props.camers} />
     </div>
   );
 };
