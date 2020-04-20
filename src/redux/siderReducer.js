@@ -152,10 +152,10 @@ let initialState = {
           detector: "Detector 1"
         }
       ],
-      newGlobalPositionBody: '',
-    newFirstNumBody: '',
-    newSecondNumBody:'',
-    newPositionBody:'',
+      newGlobalPositionBody: 'BY',
+    newFirstNumBody: 'BY',
+    newSecondNumBody:'BY',
+    newPositionBody:'BY',
     }
 
 const siderReducer= (state = initialState, action) => {

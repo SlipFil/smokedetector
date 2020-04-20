@@ -8,11 +8,11 @@ const newSystemForm = (props) => {
 
   return (
     <div className={s.newSystemForm}>
-      <label>Global Position:<Input placeholder="Basic usage" value='GP'  /></label>
-      <label>FirstNum:<Input placeholder="Basic usage" value='FN' /></label>
-      <label>SecondNum:<Input placeholder="Basic usage" value='SN' /></label>
-      <label>Position:<Input placeholder="Basic usage" value='Pos' /></label>
-      <Button className={s.button} type="primary">
+      <label>Global Position:<Input placeholder="Basic usage" value={props.appSider.newGlobalPositionBody}  /></label>
+      <label>FirstNum:<Input placeholder="Basic usage" value={props.appSider.newFirstNumBody} /></label>
+      <label>SecondNum:<Input placeholder="Basic usage" value={props.appSider.newSecondNumBody} /></label>
+      <label>Position:<Input placeholder="Basic usage" value={props.appSider.newPositionBody} /></label>
+      <Button  type="primary">
         Добавить систему 
       </Button>
     </div>

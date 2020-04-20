@@ -9,7 +9,7 @@ const Sider = (props) => {
     <div className={s.sider}>
       <AddAndSearch />
       <CamList cams={props.camers} />
-      <NewSystemFormContainer />
+      <NewSystemFormContainer appSider={props.appSider} />
     </div>
   );
 };

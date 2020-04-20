@@ -5,13 +5,13 @@ import { connect } from "react-redux";
 
  
 
-let mapStateToProps = (state) => { // Данные из стейта
+let mapStateToProps = (state) => { 
   return {
     camers: state.appSider.camers,
-    }
-}
+    appSider: state.appSider,
+}}
 
-let mapDispatchToProps = (dispatch) => { // Коллбэки
+let mapDispatchToProps = (dispatch) => { 
   return {
     
   }
