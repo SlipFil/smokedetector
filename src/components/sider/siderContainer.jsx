@@ -1,6 +1,4 @@
-import {
-    addSystemAC
-  } from "../../redux/siderReducer";
+
 import Sider from "./sider";
 import { connect } from "react-redux";
 
@@ -15,9 +13,7 @@ let mapStateToProps = (state) => { // Данные из стейта
 
 let mapDispatchToProps = (dispatch) => { // Коллбэки
   return {
-    addSystem:  () => {
-      dispatch(addSystemAC())
-    }
+    
   }
 }
 
