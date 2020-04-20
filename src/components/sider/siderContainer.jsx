@@ -3,6 +3,7 @@ import Sider from "./sider";
 import { connect } from "react-redux";
 
 
+
  
 
 let mapStateToProps = (state) => { 
@@ -13,9 +14,12 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => { 
   return {
-    
+   
+
   }
 }
 
 const SiderContainer = connect(mapStateToProps, mapDispatchToProps)(Sider)
 export default SiderContainer;
+
+

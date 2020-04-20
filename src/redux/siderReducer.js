@@ -152,42 +152,56 @@ let initialState = {
           detector: "Detector 1"
         }
       ],
-      newGlobalPositionBody: 'BY',
-    newFirstNumBody: 'BY',
-    newSecondNumBody:'BY',
-    newPositionBody:'BY',
+      newGlobalPositionBody: '',
+    newFirstNumBody: '',
+    newSecondNumBody:'',
+    newPositionBody:'',
     }
 
 const siderReducer= (state = initialState, action) => {
 
     switch (action.type) {
       case UPDATE_NEW_GP_BODY:{
-         
-        return {...state}};
+         return {...state, newGlobalPositionBody: action.NewGPBody }};
+
   case UPDATE_NEW_FN_BODY:{
-   
-        return {...state}};
+   return {...state, newFirstNumBody: action.NewFNBody }};
+
   case UPDATE_NEW_SN_BODY:{
-   
-        return {...state}};
+   return {...state, newSecondNumBody: action.NewSNBody }};
+
   case UPDATE_NEW_POSITION_BODY:{
-   
-        return {...state}};
+   return {...state, newPositionBody: action.NewPositionBody }};
+
   case CREATE_NEW_SYSTEM:{
+    let NewGPBody = state.newGlobalPositionBody
+    let NewFNBody = state.newFirstNumBody
+    let NewSNBody = state.newSecondNumBody
+    let NewPositionBody = state.newPositionBody
+    let newSystem = {
+      id: "2",
+   globalPosition: NewGPBody,
+   firstNum: NewFNBody,
+   secondNum: NewSNBody,
+   position: NewPositionBody,
+   server: "Redist Server 1",
+   detector: "Detector 1"}
+       return {...state,camers:[ ...state.camers, newSystem],newGlobalPositionBody: '',
+       newFirstNumBody: '',
+       newSecondNumBody:'',
+       newPositionBody:'' }};
    
-        return {...state}};
-       
   default: 
   return state;
     }
    }
 
 
-export const apdateNewGPBodyAC = () => ({ type: UPDATE_NEW_GP_BODY });
-export const apdateNewFNBodyAC = () => ({ type: UPDATE_NEW_FN_BODY });
-export const apdateNewSNBodyAC = () => ({ type: UPDATE_NEW_SN_BODY });
-export const apdateNewPositionBodyAC = () => ({ type: UPDATE_NEW_POSITION_BODY });
-export const createNewSystemAC = () => ({ type: CREATE_NEW_SYSTEM });
+export const apdateNewGPBodyAC = (NewGPBody) => ({ type: UPDATE_NEW_GP_BODY, NewGPBody });
+export const apdateNewFNBodyAC = (NewFNBody) => ({ type: UPDATE_NEW_FN_BODY, NewFNBody });
+export const apdateNewSNBodyAC = (NewSNBody) => ({ type: UPDATE_NEW_SN_BODY, NewSNBody });
+export const apdateNewPositionBodyAC = (NewPositionBody) => ({ type: UPDATE_NEW_POSITION_BODY, NewPositionBody });
+export const createNewSystemAC = (NewGPBody, NewFNBody, NewSNBody, NewPositionBody) => ({ type: CREATE_NEW_SYSTEM, NewGPBody, NewFNBody, NewSNBody, NewPositionBody });
 
 export default siderReducer;
 
