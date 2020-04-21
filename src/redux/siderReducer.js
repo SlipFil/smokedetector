@@ -157,7 +157,7 @@ let initialState = {
     newFirstNumBody: '',
     newSecondNumBody:'',
     newPositionBody:'',
-    newSystemFormVisible: true,
+    newSystemFormVisible: false,
     }
 
 const siderReducer= (state = initialState, action) => {

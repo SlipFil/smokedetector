@@ -45,7 +45,7 @@ const newSystemForm = (props) => {
         Global Position:
         <Input
           onChange={onGPChange}
-          placeholder="Basic usage"
+          placeholder="Enter Global Position"
           value={props.appSider.newGlobalPositionBody}
         />
       </label>
@@ -53,7 +53,7 @@ const newSystemForm = (props) => {
         FirstNum:
         <Input
           onChange={onFNChange}
-          placeholder="Basic usage"
+          placeholder="Enter FirstNum"
           value={props.appSider.newFirstNumBody}
         />
       </label>
@@ -61,7 +61,7 @@ const newSystemForm = (props) => {
         SecondNum:
         <Input
           onChange={onGSNChange}
-          placeholder="Basic usage"
+          placeholder="Enter SecondNum "
           value={props.appSider.newSecondNumBody}
         />
       </label>
@@ -69,7 +69,7 @@ const newSystemForm = (props) => {
         Position:
         <Input
           onChange={onPositionChange}
-          placeholder="Basic usage"
+          placeholder="Enter Position"
           value={props.appSider.newPositionBody}
         />
       </label>

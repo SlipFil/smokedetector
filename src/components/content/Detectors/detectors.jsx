@@ -8,7 +8,6 @@ import Detector from './Detector/detector'
 const Detectors = () => {
     return (
         <div className={s.detectors}>
-            Detectors
             <Detector />
         </div>
     )

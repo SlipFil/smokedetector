@@ -1,0 +1,22 @@
+.detectorlist{
+    width: 100%;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+.head_of_table {
+    
+    display: flex;
+    justify-content: start-between;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+
+}
+
+.head_of_table div{
+    margin-right: 50px;
+}
+.head_of_table div:last-child {
+    margin-left: 20px;
+    
+}
