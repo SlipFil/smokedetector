@@ -4,6 +4,7 @@ const UPDATE_NEW_FN_BODY = 'UPDATE_NEW_FN_BODY';
 const UPDATE_NEW_SN_BODY = 'UPDATE_NEW_SN_BODY';
 const UPDATE_NEW_POSITION_BODY = 'UPDATE_NEW_POSITION_BODY';
 const CREATE_NEW_SYSTEM = 'CREATE_NEW_SYSTEM';
+const SELECT_FORM_STATUS = 'SELECT_FORM_STATUS';
 
 let initialState = {
     camers: [
@@ -156,6 +157,7 @@ let initialState = {
     newFirstNumBody: '',
     newSecondNumBody:'',
     newPositionBody:'',
+    newSystemFormVisible: true,
     }
 
 const siderReducer= (state = initialState, action) => {
@@ -172,6 +174,11 @@ const siderReducer= (state = initialState, action) => {
 
   case UPDATE_NEW_POSITION_BODY:{
    return {...state, newPositionBody: action.NewPositionBody }};
+  case SELECT_FORM_STATUS:{
+    if (state.newSystemFormVisible === true) {
+   return {...state, newSystemFormVisible: false }} else {
+    return {...state, newSystemFormVisible: true }}
+   };
 
   case CREATE_NEW_SYSTEM:{
     let NewGPBody = state.newGlobalPositionBody
@@ -197,6 +204,7 @@ const siderReducer= (state = initialState, action) => {
    }
 
 
+export const selestFormStatusAC = () => ({ type: SELECT_FORM_STATUS });
 export const apdateNewGPBodyAC = (NewGPBody) => ({ type: UPDATE_NEW_GP_BODY, NewGPBody });
 export const apdateNewFNBodyAC = (NewFNBody) => ({ type: UPDATE_NEW_FN_BODY, NewFNBody });
 export const apdateNewSNBodyAC = (NewSNBody) => ({ type: UPDATE_NEW_SN_BODY, NewSNBody });

@@ -7,9 +7,9 @@ import NewSystemFormContainer from "./newSystemForm/newSystemFormContainer";
 const Sider = (props) => {
   return (
     <div className={s.sider}>
-      <AddAndSearch />
+      <AddAndSearch selestFormStatus ={props.selestFormStatus}  />
       <CamList cams={props.camers} />
-      <NewSystemFormContainer appSider={props.appSider} />
+      <NewSystemFormContainer  appSider={props.appSider} />
     </div>
   );
 };

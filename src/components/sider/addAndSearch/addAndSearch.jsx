@@ -5,10 +5,13 @@ import { Input } from "antd";
 
 const { Search } = Input;
 
-const AddAndSearch = () => {
+const AddAndSearch = (props) => {
+  
+  let formOpened = () => { props.selestFormStatus()}
+  
   return (
     <div className={s.wrapper}>
-      <Button className={s.button} type="primary">
+      <Button onClick={formOpened} className={s.button} type="primary">
         Добавить систему ЛХ
       </Button>
       <Search

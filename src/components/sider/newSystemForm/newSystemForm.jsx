@@ -30,19 +30,17 @@ const newSystemForm = (props) => {
 
   let addNewSystem = (e) => {
     let text = e.target.value;
-    props.createNewSystem(text);
+    props.createNewSystem(text)
+    props.selestFormStatus();
   };
-  let formStatus = "block"
-  let formClosed = () => {
+  
+  let formClosed = () => { props.selestFormStatus()}
     
-    if (formStatus === 'block') {formStatus = 'none'}else
-    {formStatus = 'block'} ;
-    debugger
-  }
-  if (formStatus === 'block') 
+  
+  if (props.newSystemFormVisible === true) 
   {return (
     
-    <div className={s.newSystemForm} style={{display: {formStatus}}}>
+    <div className={s.newSystemForm} >
       <label>
         Global Position:
         <Input
