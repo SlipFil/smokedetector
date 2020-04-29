@@ -4,41 +4,6 @@ import Camera from "./Camera/camera";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 
-// const CamList = (props) => {
-  
-  // var camera = props.cams.map(c => (
-  //   <Camera
-  //     pos1={c.globalPosition}
-  //     firstNum={c.firstNum}
-  //     secondNum={c.secondNum}
-  //     position={c.position}
-  //   />
-  // ));
-  
-  
-
-//   return (
-//     <div className={s.camlist}>
-//       {camera}
-     
-//     </div>
-//   );
-// };
-
-
-
-
-
-
-
-// fake data generator
-// const getItems = count =>
-//   Array.from({ length: count }, (v, k) => k).map(k => ({
-//     id: `item-${k}`,
-//     content: `item ${k}`
-//   }));
-
-// a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
@@ -77,7 +42,7 @@ class CamList extends React.Component {
     this.state = {
       items: this.props.cams
     };
-    this.camera = this.props.cams.map(c => (
+    this.camera =  this.state.items.map(c => (
       <Camera
         pos1={c.globalPosition}
         firstNum={c.firstNum}
@@ -100,14 +65,15 @@ class CamList extends React.Component {
       result.destination.index
     );
 
-    this.setState({
-      items
-    });
+    this.setState(
+      {items}
+    );
   }
-
+  
+  
   // Normally you would want to split things out into separate components.
   // But in this example everything is just done in one place for simplicity
-  render() {
+  render() {debugger
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
         <Droppable className={s.camlist} droppableId="droppable">
@@ -147,10 +113,5 @@ class CamList extends React.Component {
     );
   }
 }
-
-
-
-
-
 
 export default CamList;

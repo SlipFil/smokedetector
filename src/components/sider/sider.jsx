@@ -4,13 +4,15 @@ import AddAndSearch from './addAndSearch/addAndSearch'
 import CamList from "./camList/camlist";
 import NewSystemFormContainer from "./newSystemForm/newSystemFormContainer";
 
-const Sider = (props) => {
+
+class Sider extends React.Component  {
+  render(){
   return (
     <div className={s.sider}>
-      <AddAndSearch selestFormStatus ={props.selestFormStatus}  />
-      <CamList cams={props.camers} />
-      <NewSystemFormContainer  appSider={props.appSider} />
+      <AddAndSearch selestFormStatus ={this.props.selestFormStatus}  />
+      <CamList cams={this.props.camers} />
+      <NewSystemFormContainer  appSider={this.props.appSider} />
     </div>
-  );
+  );}
 };
 export default Sider;

@@ -2,7 +2,7 @@ import React from "react";
 import s from "./camera.module.css";
 
 const Camera = props => {
-  console.log(props.cam);
+  
   return (
     <div className={s.camera}>
       <div className={s.title}>

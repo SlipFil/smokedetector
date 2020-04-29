@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 
 const UPDATE_NEW_GP_BODY = 'UPDATE_NEW_GP_BODY';
 const UPDATE_NEW_FN_BODY = 'UPDATE_NEW_FN_BODY';
@@ -186,7 +187,7 @@ const siderReducer= (state = initialState, action) => {
     let NewSNBody = state.newSecondNumBody
     let NewPositionBody = state.newPositionBody
     let newSystem = {
-      id: "2",
+      id: `${state.camers.length+1}`,
    globalPosition: NewGPBody,
    firstNum: NewFNBody,
    secondNum: NewSNBody,
@@ -197,6 +198,7 @@ const siderReducer= (state = initialState, action) => {
        newFirstNumBody: '',
        newSecondNumBody:'',
        newPositionBody:'' }};
+       
    
   default: 
   return state;
