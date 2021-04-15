@@ -3,6 +3,7 @@
     border-bottom: 1px solid gray;
     text-align: left;
     padding-left: 25px;
+    cursor: grab;
     
 }
 .title{

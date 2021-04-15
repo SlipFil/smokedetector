@@ -1,14 +1,16 @@
 import React from "react";
 import s from "./camera.module.css";
 
-const Camera = props => {
-  
+const Camera = (prop) => {
+  console.log(prop.prop);
   return (
-    <div className={s.camera}>
-      <div className={s.title}>
-        {props.pos1}.{props.firstNum}.{props.secondNum}
+    <div
+     
+    >
+      {/* <div className={s.title}>
+        {prop.prop.globalPosition}.{prop.prop.firstNum}.{prop.prop.secondNum}
       </div>
-      <div>{props.position}</div>
+      <div>{prop.prop.position}</div> */}
     </div>
   );
 };
