@@ -1,11 +1,5 @@
 import React from "react";
-import s from "./detector.module.css";
-
-
-
-
 import "antd/dist/antd.css";
-
 import { Collapse } from "antd";
 import { SettingOutlined } from "@ant-design/icons";
 import DetectorList from "./DetectorList/detectorList";
@@ -18,7 +12,7 @@ function callback(key) {
 
 const genExtra = () => (
   <SettingOutlined
-    onClick={event => {
+    onClick={(event) => {
       // If you don't want click extra trigger collapse, you can prevent this:
       event.stopPropagation();
     }}
@@ -27,7 +21,7 @@ const genExtra = () => (
 
 class Detector extends React.Component {
   state = {
-    expandIconPosition: "right"
+    expandIconPosition: "right",
   };
 
   render() {
@@ -40,17 +34,15 @@ class Detector extends React.Component {
           expandIconPosition={expandIconPosition}
         >
           <Panel header="Detector 1" key="1" extra={genExtra()}>
-            <div><DetectorList /></div>
+            <div>
+              <DetectorList />
+            </div>
           </Panel>
-          
         </Collapse>
         <br />
       </div>
     );
   }
 }
-
-
-
 
 export default Detector;

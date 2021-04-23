@@ -8,7 +8,8 @@ const CamContext = React.createContext([
       secondNum: "19",
       position: "Мелешковичи",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "2",
@@ -17,7 +18,8 @@ const CamContext = React.createContext([
       secondNum: "20",
       position: "НПЗ",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "3",
@@ -26,7 +28,8 @@ const CamContext = React.createContext([
       secondNum: "21",
       position: "Слобода",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "4",
@@ -35,7 +38,8 @@ const CamContext = React.createContext([
       secondNum: "22",
       position: "Трабы",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "5",
@@ -44,7 +48,8 @@ const CamContext = React.createContext([
       secondNum: "23",
       position: "Климовка",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "6",
@@ -53,7 +58,8 @@ const CamContext = React.createContext([
       secondNum: "24",
       position: "Милоград",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "7",
@@ -62,7 +68,8 @@ const CamContext = React.createContext([
       secondNum: "25",
       position: "Леваши",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: true
     },
     {
       id: "8",
@@ -71,7 +78,8 @@ const CamContext = React.createContext([
       secondNum: "26",
       position: "Волклвыск 1",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: true
     },
     {
       id: "9",
@@ -80,7 +88,8 @@ const CamContext = React.createContext([
       secondNum: "27",
       position: "Волклвыск 2",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: true
     },
     {
       id: "10",
@@ -89,7 +98,8 @@ const CamContext = React.createContext([
       secondNum: "28",
       position: "Сосновец",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "11",
@@ -98,7 +108,8 @@ const CamContext = React.createContext([
       secondNum: "29",
       position: "Копаткевичи",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "12",
@@ -107,7 +118,8 @@ const CamContext = React.createContext([
       secondNum: "30",
       position: "Яновка",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
     {
       id: "13",
@@ -116,34 +128,9 @@ const CamContext = React.createContext([
       secondNum: "31",
       position: "Казаковка",
       server: "Redist Server 1",
-      detector: "Detector 1"
+      detector: "Detector 1",
+      onboard: false
     },
-    {
-      id: "14",
-      globalPosition: "BY",
-      firstNum: "03",
-      secondNum: "32",
-      position: "Дисна",
-      server: "Redist Server 1",
-      detector: "Detector 1"
-    },
-    {
-      id: "15",
-      globalPosition: "BY",
-      firstNum: "03",
-      secondNum: "34",
-      position: "Старина",
-      server: "Redist Server 1",
-      detector: "Detector 1"
-    },
-    {
-      id: "16",
-      globalPosition: "BY",
-      firstNum: "03",
-      secondNum: "35",
-      position: "Гадиловичи",
-      server: "Redist Server 1",
-      detector: "Detector 1"
-    }
+    
   ])
   export default CamContext

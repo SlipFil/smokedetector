@@ -1,33 +1,16 @@
-import React from "react";
-import s from "./detectorList.module.css";
-
+import React, { useContext } from "react";
+import CamContext from "../../../../../context/camContext";
 import CamInDetector from "./CamInDetector/camInDetector";
 
-
-
-
-class DetectorList extends React.Component {
-    render (){
-    return (
-        <div >
-            
-                <div className={s.head_of_table}>
-                    <div>Cam State</div>
-                    <div>Global Position</div>
-                    <div>FirstNum</div>
-                    <div>Second Num</div>
-                    <div>Position</div>
-                </div>
-                <div className={s.detectorlist}><CamInDetector />
-                <CamInDetector />
-                <CamInDetector />
-                <CamInDetector />
-                <CamInDetector />
-                <CamInDetector /></div>
-                
-            
-        </div>
-    )}
-}
+const DetectorList = () => {
+  const { cams, setCams } = useContext(CamContext);
+  
+  console.log(cams);
+  return cams.map((cam) => {
+    if (cam.onboard) {
+      return <CamInDetector  prop={cam} />;
+    } 
+  });
+};
 
 export default DetectorList;

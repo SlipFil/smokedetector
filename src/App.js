@@ -3,7 +3,7 @@ import "./App.css";
 import Content from "./components/content/content";
 import HeaderContainer from "./components/header/headerContainer";
 import SiderContainer from "./components/sider/siderContainer";
-import { Route, BrowserRouter } from "react-router-dom";
+import {  BrowserRouter } from "react-router-dom";
 import CamContext from './context/camContext'
 
 function App() {
@@ -15,7 +15,8 @@ const [cams, setCams]=useState([
     secondNum: "19",
     position: "Мелешковичи",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "2",
@@ -24,7 +25,8 @@ const [cams, setCams]=useState([
     secondNum: "20",
     position: "НПЗ",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "3",
@@ -33,7 +35,8 @@ const [cams, setCams]=useState([
     secondNum: "21",
     position: "Слобода",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "4",
@@ -42,7 +45,8 @@ const [cams, setCams]=useState([
     secondNum: "22",
     position: "Трабы",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "5",
@@ -51,7 +55,8 @@ const [cams, setCams]=useState([
     secondNum: "23",
     position: "Климовка",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "6",
@@ -60,7 +65,8 @@ const [cams, setCams]=useState([
     secondNum: "24",
     position: "Милоград",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "7",
@@ -69,7 +75,8 @@ const [cams, setCams]=useState([
     secondNum: "25",
     position: "Леваши",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: true
   },
   {
     id: "8",
@@ -78,7 +85,8 @@ const [cams, setCams]=useState([
     secondNum: "26",
     position: "Волклвыск 1",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: true
   },
   {
     id: "9",
@@ -87,7 +95,8 @@ const [cams, setCams]=useState([
     secondNum: "27",
     position: "Волклвыск 2",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: true
   },
   {
     id: "10",
@@ -96,7 +105,8 @@ const [cams, setCams]=useState([
     secondNum: "28",
     position: "Сосновец",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "11",
@@ -105,7 +115,8 @@ const [cams, setCams]=useState([
     secondNum: "29",
     position: "Копаткевичи",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "12",
@@ -114,7 +125,8 @@ const [cams, setCams]=useState([
     secondNum: "30",
     position: "Яновка",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
   {
     id: "13",
@@ -123,35 +135,10 @@ const [cams, setCams]=useState([
     secondNum: "31",
     position: "Казаковка",
     server: "Redist Server 1",
-    detector: "Detector 1"
+    detector: "Detector 1",
+    onboard: false
   },
-  {
-    id: "14",
-    globalPosition: "BY",
-    firstNum: "03",
-    secondNum: "32",
-    position: "Дисна",
-    server: "Redist Server 1",
-    detector: "Detector 1"
-  },
-  {
-    id: "15",
-    globalPosition: "BY",
-    firstNum: "03",
-    secondNum: "34",
-    position: "Старина",
-    server: "Redist Server 1",
-    detector: "Detector 1"
-  },
-  {
-    id: "16",
-    globalPosition: "BY",
-    firstNum: "03",
-    secondNum: "35",
-    position: "Гадиловичи",
-    server: "Redist Server 1",
-    detector: "Detector 1"
-  }
+  
 ])
 
   return (

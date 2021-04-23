@@ -8,11 +8,11 @@ import { Provider } from "react-redux";
 import store from './redux/redux-store'
 
 ReactDOM.render(
-  <React.StrictMode>
+  
     <Provider store={store}>
       <App appCams={camers} />
     </Provider>
-  </React.StrictMode>,
+  ,
   document.getElementById("root")
 );
 
