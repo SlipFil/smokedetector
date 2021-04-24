@@ -13,7 +13,7 @@ function CamList() {
     }
   }
 
-  function DragStartHandler(e, cam) {
+  function DragStartHandler(e, cam) { console.log(cam)
     setCurrentCam(cam);
   }
   function DragLeaveHandler(e) {
@@ -29,6 +29,7 @@ function CamList() {
     cams.splice(currentIndex, 1);
     const dropIndex = cams.indexOf(cam);
     cams.splice(dropIndex + 1, 0, currentCam);
+    
     setCams(
       cams.map((c) => {
         if (c.id === cam.id) {
