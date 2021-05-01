@@ -126,7 +126,7 @@ const [cams, setCams]=useState([
     position: "Яновка",
     server: "Redist Server 1",
     detector: "Detector 1",
-    onboard: false
+    onboard: true
   },
   {
     id: "13",
@@ -136,7 +136,7 @@ const [cams, setCams]=useState([
     position: "Казаковка",
     server: "Redist Server 1",
     detector: "Detector 1",
-    onboard: false
+    onboard: true
   },
   
 ])

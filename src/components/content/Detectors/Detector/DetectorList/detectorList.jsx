@@ -22,7 +22,7 @@ const DetectorList = () => {
   }
   function DragLeaveHandler(e) {
     e.target.parentNode.style.backgroundColor = "white";
-    console.log(e.target.classList)
+    console.log(e.target)
   }
   function DragEndHandler(e) {
     e.target.parentNode.style.backgroundColor = "white";
