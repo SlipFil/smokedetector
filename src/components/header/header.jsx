@@ -8,8 +8,8 @@ const Header = (props) => {
   let onAddRS = () => {
     props.addRS()
   }
-  let RSbutton = props.redistServers.map((r) => (
-    <NavLink to="/redistserver1" activeClassName={s.active}>
+  let RSbutton = props.redistServers.map((r,index) => (
+    <NavLink key={index} to="/redistserver1" activeClassName={s.active}>
       <Button className={s.button}>{r}</Button>
     </NavLink>
   ));
