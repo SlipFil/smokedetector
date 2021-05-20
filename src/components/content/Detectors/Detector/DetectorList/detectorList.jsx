@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import CamContext from "../../../../../context/camContext";
 
-import CamInDetector from "./CamInDetector/CamInDetector.jsx";
+import CamInDetector from "./CamInDetector/camInDetector";
 
 const DetectorList = () => {
   const { cams, } = useContext(CamContext);
 return(
    cams.map((cam) => { 
-    if (cam.onboard) { return <CamInDetector key={cam.id} cam={cam}/>} 
+    if (cam.onboard) { return <CamInDetector key={cam.id} cam={cam}/>}
   }))
 };
 
